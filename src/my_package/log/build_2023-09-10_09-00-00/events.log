@@ -1,0 +1,32 @@
+[0.000000] (-) TimerEvent: {}
+[0.000069] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000126] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.099237] (-) TimerEvent: {}
+[0.199430] (-) TimerEvent: {}
+[0.299607] (-) TimerEvent: {}
+[0.399805] (-) TimerEvent: {}
+[0.403987] (my_package) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', 'build/my_package', 'build', '--build-base', '/src/my_package/build/my_package/build', 'install', '--record', '/src/my_package/build/my_package/install.log', '--single-version-externally-managed'], 'cwd': '/src/my_package', 'env': {'NV_CUDA_COMPAT_PACKAGE': 'cuda-compat-11-8', 'LANGUAGE': 'en_US:en', 'USER': 'root', 'HOSTNAME': '9d537ebccfc7', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'HOME': '/root', 'OLDPWD': '/usr/local', 'ROS_PYTHON_VERSION': '3', 'CUDA_VERSION': '11.8.0', 'ROS_DISTRO': 'iron', 'NVIDIA_REQUIRE_CUDA': 'cuda>=11.8 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=510,driver<511 brand=unknown,driver>=510,driver<511 brand=nvidia,driver>=510,driver<511 brand=nvidiartx,driver>=510,driver<511 brand=geforce,driver>=510,driver<511 brand=geforcertx,driver>=510,driver<511 brand=quadro,driver>=510,driver<511 brand=quadrortx,driver>=510,driver<511 brand=titan,driver>=510,driver<511 brand=titanrtx,driver>=510,driver<511 brand=tesla,driver>=515,driver<516 brand=unknown,driver>=515,driver<516 brand=nvidia,driver>=515,driver<516 brand=nvidiartx,driver>=515,driver<516 brand=geforce,driver>=515,driver<516 brand=geforcertx,driver>=515,driver<516 brand=quadro,driver>=515,driver<516 brand=quadrortx,driver>=515,driver<516 brand=titan,driver>=515,driver<516 brand=titanrtx,driver>=515,driver<516', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,compute,utility', 'NV_CUDA_CUDART_VERSION': '11.8.89-1', 'PATH': '/opt/ros/iron/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NVARCH': 'x86_64', 'QTWEBENGINE_DISABLE_SANDBOX': '1', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/iron', 'DEBIAN_FRONTEND': 'noninteractive', 'WEBOTS_HOME': '/usr/local/webots', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/src/my_package/build/my_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/src/my_package/build/my_package/prefix_override:/src/my_package/install/my_package/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[0.499914] (-) TimerEvent: {}
+[0.551387] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[0.551785] (my_package) StdoutLine: {'line': b'writing build/my_package/my_package.egg-info/PKG-INFO\n'}
+[0.551920] (my_package) StdoutLine: {'line': b'writing dependency_links to build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[0.552159] (my_package) StdoutLine: {'line': b'writing entry points to build/my_package/my_package.egg-info/entry_points.txt\n'}
+[0.552232] (my_package) StdoutLine: {'line': b'writing requirements to build/my_package/my_package.egg-info/requires.txt\n'}
+[0.552378] (my_package) StdoutLine: {'line': b'writing top-level names to build/my_package/my_package.egg-info/top_level.txt\n'}
+[0.553410] (my_package) StdoutLine: {'line': b"reading manifest file 'build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[0.553650] (my_package) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.554168] (my_package) StdoutLine: {'line': b"writing manifest file 'build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[0.554255] (my_package) StdoutLine: {'line': b'running build\n'}
+[0.554308] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[0.554469] (my_package) StdoutLine: {'line': b'running install\n'}
+[0.554656] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[0.555341] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[0.555691] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.556949] (my_package) StdoutLine: {'line': b"removing '/src/my_package/install/my_package/lib/python3.10/site-packages/my_package-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.557162] (my_package) StdoutLine: {'line': b'Copying build/my_package/my_package.egg-info to /src/my_package/install/my_package/lib/python3.10/site-packages/my_package-0.0.0-py3.10.egg-info\n'}
+[0.557776] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[0.571237] (my_package) StdoutLine: {'line': b'Installing my_robot_driver script to /src/my_package/install/my_package/lib/my_package\n'}
+[0.571459] (my_package) StdoutLine: {'line': b"writing list of installed files to '/src/my_package/build/my_package/install.log'\n"}
+[0.584491] (my_package) CommandEnded: {'returncode': 0}
+[0.594673] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[0.595283] (-) EventReactorShutdown: {}

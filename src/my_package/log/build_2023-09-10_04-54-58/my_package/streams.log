@@ -1,0 +1,36 @@
+[0.390s] Invoking command in '/src/my_package': PYTHONPATH=/src/my_package/build/my_package/prefix_override:/src/my_package/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/my_package build --build-base /src/my_package/build/my_package/build install --record /src/my_package/build/my_package/install.log --single-version-externally-managed
+[0.550s] running egg_info
+[0.550s] creating build/my_package/my_package.egg-info
+[0.550s] writing build/my_package/my_package.egg-info/PKG-INFO
+[0.550s] writing dependency_links to build/my_package/my_package.egg-info/dependency_links.txt
+[0.550s] writing entry points to build/my_package/my_package.egg-info/entry_points.txt
+[0.551s] writing requirements to build/my_package/my_package.egg-info/requires.txt
+[0.551s] writing top-level names to build/my_package/my_package.egg-info/top_level.txt
+[0.551s] writing manifest file 'build/my_package/my_package.egg-info/SOURCES.txt'
+[0.552s] reading manifest file 'build/my_package/my_package.egg-info/SOURCES.txt'
+[0.552s] adding license file 'LICENSE'
+[0.552s] writing manifest file 'build/my_package/my_package.egg-info/SOURCES.txt'
+[0.552s] running build
+[0.553s] running build_py
+[0.553s] creating /src/my_package/build/my_package/build
+[0.553s] creating /src/my_package/build/my_package/build/lib
+[0.553s] creating /src/my_package/build/my_package/build/lib/my_package
+[0.553s] copying my_package/__init__.py -> /src/my_package/build/my_package/build/lib/my_package
+[0.553s] copying my_package/my_robot_driver.py -> /src/my_package/build/my_package/build/lib/my_package
+[0.553s] running install
+[0.553s] running install_lib
+[0.554s] creating /src/my_package/install/my_package/lib/python3.10/site-packages/my_package
+[0.554s] copying /src/my_package/build/my_package/build/lib/my_package/__init__.py -> /src/my_package/install/my_package/lib/python3.10/site-packages/my_package
+[0.554s] copying /src/my_package/build/my_package/build/lib/my_package/my_robot_driver.py -> /src/my_package/install/my_package/lib/python3.10/site-packages/my_package
+[0.554s] byte-compiling /src/my_package/install/my_package/lib/python3.10/site-packages/my_package/__init__.py to __init__.cpython-310.pyc
+[0.554s] byte-compiling /src/my_package/install/my_package/lib/python3.10/site-packages/my_package/my_robot_driver.py to my_robot_driver.cpython-310.pyc
+[0.555s] running install_data
+[0.555s] creating /src/my_package/install/my_package/share/ament_index
+[0.555s] creating /src/my_package/install/my_package/share/ament_index/resource_index
+[0.555s] creating /src/my_package/install/my_package/share/ament_index/resource_index/packages
+[0.555s] copying resource/my_package -> /src/my_package/install/my_package/share/ament_index/resource_index/packages
+[0.555s] creating /src/my_package/install/my_package/share/my_package/launch
+[0.556s] copying launch/robot_launch.py -> /src/my_package/install/my_package/share/my_package/launch
+[0.556s] creating /src/my_package/install/my_package/share/my_package/worlds
+[0.556s] error: can't copy 'worlds/my_world.wbt': doesn't exist or not a regular file
+[0.569s] Invoked command in '/src/my_package' returned '1': PYTHONPATH=/src/my_package/build/my_package/prefix_override:/src/my_package/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/my_package build --build-base /src/my_package/build/my_package/build install --record /src/my_package/build/my_package/install.log --single-version-externally-managed

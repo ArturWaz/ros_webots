@@ -1,0 +1,53 @@
+version: "3"
+
+services:
+
+  webots:
+  
+    # image: cyberbotics/webots:R2023b-ubuntu22.04
+    image: ros_webots
+    build: ./ros_docker_base
+
+    command: >
+      bash -c "cd /src/my_package/
+      && colcon build
+      && source install/local_setup.bash
+      && ros2 launch my_package robot_launch.py"
+
+    environment:
+      - DISPLAY
+
+    volumes:
+      - /dev/dri:/dev/dri:ro # drivers access
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw # x server access
+      - ./src:/src:rw
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+
+
+  ### 
+  ### currently it is not possible to set remote controller
+  ### ref 1: https://github.com/cyberbotics/webots_ros2/blob/master/webots_ros2_driver/webots_ros2_driver/webots_controller.py#L35
+  ### ref 2: https://github.com/cyberbotics/webots_ros2/blob/master/webots_ros2_driver/webots_ros2_driver/utils.py#L138
+  ### custom lib would have to be written and set up
+  ### 
+  # ros:
+  #   image: ros:iron-ros-base
+
+  #   command: ros2 launch my_package robot_launch.py
+
+  #   volumes:
+  #     - ./src:/src:rw
+    # depends_on:
+    # - webots
+
+
+networks:
+  default:
+    name: ros_webots
+    driver: bridge
